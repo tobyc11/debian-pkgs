@@ -1,0 +1,19 @@
+Source: initramfs-tools-overlay
+Section: utils
+Priority: optional
+Maintainer: Toby Chen <tobychen@berkeley.edu>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage:
+#Vcs-Browser: https://salsa.debian.org/debian/initramfs-tools-overlay
+#Vcs-Git: https://salsa.debian.org/debian/initramfs-tools-overlay.git
+
+Package: initramfs-tools-overlay
+Architecture: all
+Depends:
+ ${misc:Depends},
+Description: Add overlay option to kernel cmdline
+ Adding overlay option to kernel cmdline causes initramfs to mount overlayfs
+ on top of root with tmpfs backing.

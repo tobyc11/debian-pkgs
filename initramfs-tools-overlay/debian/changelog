@@ -1,0 +1,5 @@
+initramfs-tools-overlay (1.0-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Toby Chen <tobychen@berkeley.edu>  Sun, 22 Sep 2024 15:07:24 -0700

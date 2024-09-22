@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 22 Sep 2024 15:07:24 -0700
+Source: initramfs-tools-overlay
+Binary: initramfs-tools-overlay
+Architecture: source all
+Version: 1.0-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Toby Chen <tobychen@berkeley.edu>
+Changed-By: Toby Chen <tobychen@berkeley.edu>
+Description:
+ initramfs-tools-overlay - Add overlay option to kernel cmdline
+Changes:
+ initramfs-tools-overlay (1.0-1) UNRELEASED; urgency=medium
+ .
+   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 3bcd3a6658b9ef82eeb77ae141e42658f1e148f3 901 initramfs-tools-overlay_1.0-1.dsc
+ e8021eb472fc758df5a9c91932f321b4d21205ee 9772 initramfs-tools-overlay_1.0.orig.tar.xz
+ 404d7254e27eeab5f49306fbaa35bf2a29b3e7ec 3960 initramfs-tools-overlay_1.0-1.debian.tar.xz
+ dce05fd25bbd0eb1cbb1ee6e012dfbb63bbad43c 3112 initramfs-tools-overlay_1.0-1_all.deb
+ 15830be2f9f57a5b2afa01c92a5bff11d0b54d44 5149 initramfs-tools-overlay_1.0-1_arm64.buildinfo
+Checksums-Sha256:
+ 84c9b66ebd67805a94940feee172ba7f26f0611c150e1a63605a1acabea50727 901 initramfs-tools-overlay_1.0-1.dsc
+ 0449867c5eb90c32885d36ad8a848f254e20c080b4ddd9e99546c4f0076748d0 9772 initramfs-tools-overlay_1.0.orig.tar.xz
+ 1604d9a136164d506ccccb65304897ae8e83f58abcd3f3849a7601178c7a13af 3960 initramfs-tools-overlay_1.0-1.debian.tar.xz
+ f95ddeaeb496a2e9feb883a0413acc71c02a12c6c07d4a9355e133697db754d4 3112 initramfs-tools-overlay_1.0-1_all.deb
+ 4f1ee466a0aa457bea54bb221f22c28039f5df667b85f7364c68cc60ec80d002 5149 initramfs-tools-overlay_1.0-1_arm64.buildinfo
+Files:
+ 15aefbf61e16bcf09eef9d2540f5a6dc 901 utils optional initramfs-tools-overlay_1.0-1.dsc
+ 828a09a48d3aa802b2fd6dd54261163f 9772 utils optional initramfs-tools-overlay_1.0.orig.tar.xz
+ 1db400d18ac83f254453619dab3291ee 3960 utils optional initramfs-tools-overlay_1.0-1.debian.tar.xz
+ 6f58524b23092683044ed74dc4889937 3112 utils optional initramfs-tools-overlay_1.0-1_all.deb
+ 74ba2f45c39408f7ff2d8ebd00a637a5 5149 utils optional initramfs-tools-overlay_1.0-1_arm64.buildinfo

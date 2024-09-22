@@ -1,0 +1,35 @@
+#!/bin/sh -e
+
+PREREQS="udev"
+
+prereqs() { echo "$PREREQS"; }
+
+case "$1" in
+    prereqs)
+    prereqs
+    exit 0
+    ;;
+esac
+
+. /scripts/functions
+
+# Mount overlayfs over root if "overlay" in cmdline
+for x in $(cat /proc/cmdline); do
+        case $x in
+        overlay)
+	        do_overlay=y
+                ;;
+        esac
+done
+
+if [ "$do_overlay" = "y" ]; then
+	mkdir /overlay
+	mount -t tmpfs tmpfs /overlay
+	mkdir /overlay/upper                                                       
+	mkdir /overlay/work                                        
+
+	modprobe overlay                               
+	mount -t overlay overlay -o lowerdir=${rootmnt},upperdir=/overlay/upper,workdir=/overlay/work ${rootmnt}
+	log_success_msg "Overlay root setup successful"
+fi
+
